@@ -1,4 +1,4 @@
 # eatfirst
 database &amp; php web
 <br>
-<img src=./food_main.jpg>
+<img src=./food_main.jpg width="60%">
