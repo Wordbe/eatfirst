@@ -1,3 +1,4 @@
 # eatfirst
 database &amp; php web
-<img src=./>
+<br>
+<img src=./food_main.jpg>
