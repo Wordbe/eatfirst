@@ -2,4 +2,5 @@
 database &amp; php web
 <br>
 <img src=./food_main.jpg width="60%">
-click and go to <a href="http://115.68.231.165/~2014250043/project/eatFirst/">eatFirst
+<br>
+click and go to <a href="http://115.68.231.165/~2014250043/project/eatFirst/"><b>eatFirst</b>
