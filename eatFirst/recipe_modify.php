@@ -9,9 +9,9 @@ $recipe_name = $_POST['recipe_name'];
 $foodtype_no = $_POST['foodtype_no'];
 $content = $_POST['content'];
 
-mysqli_query($conn, "set autocommit = 0");	// autocommit 해제
-mysqli_query($conn, "set transation isolation level serializable");	// isolation level 설정
-mysqli_query($conn, "begin");	// begins a transation
+mysqli_query($conn, "set autocommit = 0");	// autocommit 해제.
+mysqli_query($conn, "set transation isolation level serializable");	// isolation level 설정.
+mysqli_query($conn, "begin");	// begins a transation.
 
 $ret = mysqli_query($conn, "update recipe set recipe_name = '$recipe_name',
 											  foodtype_no = $foodtype_no,
@@ -21,13 +21,13 @@ $ret = mysqli_query($conn, "update recipe set recipe_name = '$recipe_name',
 
 if(!$ret)
 {
-	mysqli_query($conn, "rollback"); // query 수행 실패. 수행 전으로 rollback
+	mysqli_query($conn, "rollback"); // query 수행 실패. 수행 전으로 rollback.
 	echo "에러";
     msg('Query Error : '.mysqli_error($conn));
 }
 else
 {
-	mysqli_query($conn, "commit"); // query 수행 성공. 수행 내역 commit
+	mysqli_query($conn, "commit"); // query 수행 성공. 수행 내역 commit.
     s_msg ('성공적으로 수정 되었습니다');
     echo "<meta http-equiv='refresh' content='0;url=recipe_list.php'>";
 }
